@@ -31,7 +31,7 @@ galaxy_info:
   #
   # platforms is a list of platforms, and each platform has a name and a list of versions.
   #
-  # platforms:
+  platforms:
   # - name: Fedora
   #   versions:
   #   - all
@@ -42,6 +42,12 @@ galaxy_info:
   #   - 1.0
   #   - 7
   #   - 99.99
+  - name: GenericLinux
+    versions:
+    - any
+  - name: GenericBSD
+    versions:
+    - any
 
   galaxy_tags:
     # List tags for your role here, one per line. A tag is a keyword that describes
