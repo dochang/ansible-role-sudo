@@ -1,0 +1,23 @@
+---
+- name: ensure sudo group present
+  group:
+    name: sudo
+    state: present
+    system: yes
+
+- name: ensure permission of /etc/sudoers.d
+  file:
+    name: /etc/sudoers.d
+    state: directory
+    owner: root
+    group: root
+    mode: '755'
+
+- name: install /etc/sudoers
+  template:
+    src: etc/sudoers
+    dest: /etc/sudoers
+    owner: root
+    group: root
+    mode: '440'
+    validate: 'visudo --check --file=%s'
