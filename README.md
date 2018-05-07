@@ -1,6 +1,10 @@
 Sudo
 ====
 
+[![Build Status](https://travis-ci.org/dochang/ansible-role-sudo.svg?branch=master)](https://travis-ci.org/dochang/ansible-role-sudo)
+[![Ansible Role](https://img.shields.io/ansible/role/25483.svg)](https://galaxy.ansible.com/dochang/sudo/)
+[![Ansible Role](https://img.shields.io/ansible/role/d/25483.svg)](https://galaxy.ansible.com/dochang/sudo/)
+
 An ansible role to configure sudo.
 
 NOTE: this role does NOT install sudo.
